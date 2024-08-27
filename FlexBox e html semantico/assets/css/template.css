@@ -341,7 +341,7 @@ footer .widget_tittle_text {
   .banner_headline h1 {
     font-size: 30px;
   }
-  .banner_headline h2 {
+  .banner_headline > h2 {
     font-size: 15px;
   }
   .banner_options {
