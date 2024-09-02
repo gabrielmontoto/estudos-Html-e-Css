@@ -1,0 +1,27 @@
+body {
+  background-color: #363333;
+}
+
+.button_container {
+  display: flex;
+}
+
+.button_container a {
+  width: 300;
+  height: 200;
+  background-color: #c55a5a;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  box-shadow: 0px 0px 5px #888888;
+  border-radius: 7px;
+  font-size: 40px;
+  color: #aaaaaa;
+}
+
+.button_container a:hover {
+  background-color: #524646;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px #706363;
+}

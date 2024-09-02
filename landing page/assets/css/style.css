@@ -1,0 +1,22 @@
+body {
+  background-color: #cccccc;
+}
+.header_middle_countainer {
+  width: 100%;
+}
+.header_middle_img_holder {
+  width: 100%;
+  background-image: url("../images/banner-placeholder.png");
+  height: 300;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.header_middle_img_holder_text_countainer {
+  width: 500;
+  height: 150;
+  background-color: #cea4a4;
+  margin-left: 30;
+  /* margin-top: 50; */
+}
