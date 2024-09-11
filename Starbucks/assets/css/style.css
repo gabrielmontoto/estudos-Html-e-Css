@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+:root {
+  --primary-brand-color: #363333;
+  --basic-green-color: #117050;
+  --max-width: 1140px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-brand-color);
+  font-family: "Open Sans", "sans-serif";
+}
+
+header .line {
+  background-color: var(--basic-green-color);
+  height: 10px;
+}
+
+.base_container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+.header_area {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.header_left_container img {
+  width: 64px;
+  height: 64px;
+}
+.header_left_container {
+}
+
+.header_right_container {
+  display: flex;
+  align-items: center;
+}
+
+.header_search form {
+  display: flex;
+}
+.header_search input {
+  font-size: 16px;
+  padding: 7px 10px;
+  border: 1px solid #999;
+  outline: 0;
+  width: 100%;
+  max-width: 220px;
+}
+.header_search button {
+  border: 0;
+  background: transparent;
+  margin-left: -30px;
+  cursor: pointer;
+}
+.header_search button img {
+  width: 16px;
+  height: 16px;
+}
+.header_menu {
+  margin-left: 50px;
+}
+.header_menu img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.banner {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.banner h1 {
+  font-size: 90px;
+  font-weight: 90px;
+  font-weight: bold;
+  font-family: "Oswald", "Times New Roman", Times, serif;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.banner span {
+}
+.banner_images {
+  margin-top: 50px;
+}
+.banner_images img {
+  width: 148px;
+  height: 148px;
+  border: 6px solid var(--basic-green-color);
+  border-radius: 50%;
+  margin-right: 40px;
+}
