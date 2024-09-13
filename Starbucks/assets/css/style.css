@@ -196,5 +196,99 @@ h2 {
 .area3_img1 {
   background-image: url("../images/f5.jpg");
   background-size: cover;
+  background-position: top;
+}
+
+.area4 {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  background-color: #e8e9ee;
+}
+.area4_content {
+  padding: 150px 80px;
+}
+.area4_text {
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+
+.area4_img1 {
+  background-image: url("../images/bg3.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.area5 {
+  background-image: url("../images/bg4.jpg");
+  background-size: cover;
   background-position: center;
+  height: 600px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 80px;
+  text-align: center;
+}
+
+@media (min-width: 769px) and (max-width: 1140px) {
+  .base_container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .base_container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .area1,
+  .area3 {
+    grid-template-columns: 3fr 2fr;
+  }
+  .area2 {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .base_container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .header_menu {
+    margin-left: 20px;
+  }
+  .header_search {
+    margin-left: 20px;
+  }
+  .header_search input {
+    max-width: 120px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .banner_images img {
+    height: 70px;
+    width: 70px;
+    border: 3px solid var(--basic-green-color);
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .area1,
+  .area2,
+  .area3,
+  .area4 {
+    grid-template-columns: 1fr;
+  }
+  .area1_content,
+  .area2_content,
+  .area3_content,
+  .area4_content {
+    padding: 30px;
+  }
 }
