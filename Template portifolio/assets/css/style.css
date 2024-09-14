@@ -1,0 +1,100 @@
+:root {
+  --base_color: #363333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(#3b576d);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu_line {
+  height: 3px;
+  background-color: var(--base_color);
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.left_side {
+  flex: 1;
+  background-color: #3b576d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.right_side {
+  flex: 1;
+  background-image: url("../images/hero.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 20px;
+}
+
+.container .info {
+  color: #fff;
+}
+.container .info .role {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.container .info .name {
+  font-size: 70px;
+}
+.container .info .buttons {
+  margin-top: 20px;
+}
+.container .info .buttons a {
+  text-decoration: none;
+  color: #3b576d;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #363333;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #363333;
+}
+
+.container .info .buttons a:hover {
+  color: #fff;
+  background-color: #3b576d;
+  opacity: 0.7;
+}
