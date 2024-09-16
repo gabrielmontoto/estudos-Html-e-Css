@@ -62,7 +62,7 @@ header {
 
 /* Projects */
 .projects .container {
-  padding: 0;
+  /* padding: 0; */
 }
 .projects {
   /* padding-top: 20px;
@@ -87,6 +87,30 @@ header {
   width: 1000vw;
 }
 
+.projects_pointers_holder {
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  /* position: absolute; */
+  /* margin-top: -50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects_pointers_holder .slider_pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #968b8b;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.projects_pointers_holder .slider_pointer.active {
+  background-color: #e94646;
+}
+
 /*Project - slide */
 .projects .slide {
   width: 100vw;
@@ -96,7 +120,7 @@ header {
 .projects .slide .slide_content {
   max-width: 1200px;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .project_main_contributions_photos_holder,
 .project_overview_photo_holder {
@@ -127,6 +151,33 @@ header {
 .academic_knowledge .academic_institution_holder p {
   font-size: 20px;
 }
+
+/* abilities */
+.abilities .abilities_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.abilities h3 {
+}
+.abilities ul li {
+  list-style-type: none;
+}
+
+.abilities .abilities_personal {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.abilities .abilities_technical {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+}
+.abilities .abilities_others {
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 1;
+}
+
+/*footer */
 
 @media print {
   body {
