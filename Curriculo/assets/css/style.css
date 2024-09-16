@@ -1,3 +1,5 @@
+:root {
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +7,129 @@
 }
 body {
   background-color: #363333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 25px 20px;
+  background-color: #cccccc;
+  margin-top: 20px;
+}
+
+.horizontal_line_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.container h1 {
+  font-size: 40px;
+  /* padding: 20px; */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.line_data {
+  flex: 1;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+/* about me*/
+
+.about_me {
+  /* margin: 40px 0; */
+  /* padding: 10px 0 10px 0; */
+}
+
+/*Arrows in Projects*/
+.arrows_holder {
+}
+.left_arrow {
+}
+.right_arrow {
+}
+
+/* Projects */
+.projects .container {
+  padding: 0;
+}
+.projects {
+  /* padding-top: 20px;
+  padding-bottom: 10px; */
+  overflow: hidden;
+}
+.projects_holder {
+}
+
+.project_tittle {
+}
+.project_info {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.project_info_text {
+  flex: 1;
+}
+
+.projects .sliders_container {
+  width: 1000vw;
+}
+
+/*Project - slide */
+.projects .slide {
+  width: 100vw;
+  display: inline-block;
+}
+
+.projects .slide .slide_content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+.project_main_contributions_photos_holder,
+.project_overview_photo_holder {
+  display: flex;
+  justify-content: center;
+}
+.project_overview_photo_holder img {
+  max-width: 200px;
+  height: auto;
+  margin: 30px;
+}
+.project_main_contributions_photos_holder img {
+  max-width: 200px;
+  margin: 30px 40px 30px 40px;
+  flex: 1;
+}
+
+/* academic knowledge */
+.academic_knowledge {
+}
+
+.academic_knowledge .academic_institution_holder {
+  padding: 20px 0;
+}
+.academic_knowledge .academic_institution_holder h3 {
+  font-size: 23px;
+}
+.academic_knowledge .academic_institution_holder p {
+  font-size: 20px;
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
 }
