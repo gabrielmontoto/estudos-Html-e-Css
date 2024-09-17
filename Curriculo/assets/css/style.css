@@ -178,7 +178,19 @@ header {
 }
 
 /*footer */
-
+.social_holder {
+  display: flex;
+}
+.social_holder .social {
+  margin-left: 20px;
+  width: 32px;
+  height: 32px;
+  /* background-color: #363333; */
+}
+.social_holder .social img {
+  width: 32px;
+  height: 32px;
+}
 @media print {
   body {
     background-color: white;
