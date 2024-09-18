@@ -39,6 +39,9 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.container h2 {
+  padding-bottom: 20px;
+}
 .line_data {
   flex: 1;
   /* padding: 20px; */
@@ -62,7 +65,7 @@ header {
 
 /* Projects */
 .projects .container {
-  /* padding: 0; */
+  padding: 0;
 }
 .projects {
   /* padding-top: 20px;
@@ -73,11 +76,15 @@ header {
 }
 
 .project_tittle {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 .project_info {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 .project_info_text {
   flex: 1;
@@ -88,7 +95,8 @@ header {
 }
 
 .projects_pointers_holder {
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  padding-bottom: 30px;
   width: 100%;
   height: 20px;
   /* position: absolute; */
@@ -120,7 +128,7 @@ header {
 .projects .slide .slide_content {
   max-width: 1200px;
   width: 100%;
-  /* padding: 20px; */
+  padding: 20px;
 }
 .project_main_contributions_photos_holder,
 .project_overview_photo_holder {
@@ -143,7 +151,7 @@ header {
 }
 
 .academic_knowledge .academic_institution_holder {
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 .academic_knowledge .academic_institution_holder h3 {
   font-size: 23px;
@@ -203,5 +211,14 @@ footer .container {
 @media print {
   body {
     background-color: white;
+  }
+  img {
+    display: none;
+  }
+  .projects_pointers_holder {
+    display: none;
+  }
+  footer {
+    display: none;
   }
 }
