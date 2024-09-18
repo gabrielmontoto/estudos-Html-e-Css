@@ -80,6 +80,14 @@ header {
   font-weight: bold;
   padding-bottom: 15px;
 }
+.project_tittle a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.project_tittle a:hover {
+  text-decoration: underline;
+}
 .project_info {
   display: flex;
   text-align: center;
@@ -140,10 +148,12 @@ header {
   height: auto;
   margin: 30px;
 }
+.project_overview_photo_holder img,
 .project_main_contributions_photos_holder img {
   max-width: 200px;
   margin: 30px 40px 30px 40px;
   flex: 1;
+  box-shadow: 0 0 10px #646363;
 }
 
 /* academic knowledge */
