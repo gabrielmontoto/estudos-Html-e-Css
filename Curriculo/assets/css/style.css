@@ -57,10 +57,40 @@ header {
 
 /*Arrows in Projects*/
 .arrows_holder {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  /* left: 0; */
+  width: 90%;
+  /* margin-left: calc(5vw); */
+  max-width: 1160px;
+  height: inherit;
+  align-items: center;
 }
-.left_arrow {
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.left_arrow,
 .right_arrow {
+  width: 32px;
+  height: 32px;
+  background-color: #646363;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Projects */

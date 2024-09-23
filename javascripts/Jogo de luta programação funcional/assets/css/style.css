@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #363333;
+}
+
+.fight_area {
+  display: flex;
+  gap: 20px;
+}
+
+#player,
+#enemy {
+  flex: 1;
+}
+.life_bar_holder {
+  height: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+}
+.life_bar_holder .life_bar {
+  height: inherit;
+  background-color: red;
+  border-radius: 5px;
+  width: 5%;
+}
+.attack_button {
+}
+
+.log_container {
+}
+.log {
+  border: 1px dotted #c9c9c9;
+  height: 200px;
+  overflow-y: scroll;
+}
