@@ -1,8 +1,9 @@
-let b = "";
-let v = `${b}`;
+const player = createKnight("playerName");
+const enemy = createLittleMonster();
 
-// document.querySelectorAll()
-// document.querySelector('#idName')
-// document.querySelector('.className')
-// document.getElementsByTagName('div')
-// document.getElementById('divName')
+Stage.start(
+  player,
+  enemy,
+  document.querySelector("#player"),
+  document.querySelector("#enemy")
+);
