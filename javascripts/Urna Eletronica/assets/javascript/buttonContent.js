@@ -1,0 +1,80 @@
+let buttonContentJson = [
+  {
+    id: "1",
+    name: "1",
+    line: 0,
+    class: "none",
+  },
+  {
+    id: "2",
+    name: "2",
+    line: 0,
+    class: "none",
+  },
+  {
+    id: "3",
+    name: "3",
+    line: 0,
+    class: "none",
+  },
+  {
+    id: "4",
+    name: "4",
+    line: 1,
+    class: "none",
+  },
+  {
+    id: "5",
+    name: "5",
+    line: 1,
+    class: "none",
+  },
+  {
+    id: "6",
+    name: "6",
+    line: 1,
+    class: "none",
+  },
+  {
+    id: "7",
+    name: "7",
+    line: 2,
+    class: "none",
+  },
+  {
+    id: "8",
+    name: "8",
+    line: 2,
+    class: "none",
+  },
+  {
+    id: "9",
+    name: "9",
+    line: 2,
+    class: "none",
+  },
+  {
+    id: "10",
+    name: "0",
+    line: 3,
+    class: "none",
+  },
+  {
+    id: "11",
+    name: "Branco",
+    line: 4,
+    class: "btn_white",
+  },
+  {
+    id: "12",
+    name: "Corrige",
+    line: 4,
+    class: "btn_fix",
+  },
+  {
+    id: "13",
+    name: "Confirma",
+    line: 4,
+    class: "btn_Confirm",
+  },
+];
