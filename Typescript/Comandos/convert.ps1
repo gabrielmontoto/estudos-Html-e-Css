@@ -1,0 +1,1 @@
+tsc  Typescript/template/src/typescript.ts --outDir Typescript/template/public
