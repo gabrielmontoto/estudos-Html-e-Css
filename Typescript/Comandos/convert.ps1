@@ -1,1 +1,7 @@
-tsc  Typescript/template/src/typescript.ts --outDir Typescript/template/public
+tsc  Typescript/template/src/typescript.ts --noEmitOnError --outDir Typescript/template/public
+
+# -w  
+# é o watch mode que fica obervando cada mudança
+
+#tsc --init
+#para gerar arquivo tsconfig
