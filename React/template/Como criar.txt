@@ -1,0 +1,5 @@
+pra instalar
+npx create-next-app
+
+para rodar o projeto
+npm run dev
