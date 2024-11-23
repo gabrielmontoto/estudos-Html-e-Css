@@ -3,3 +3,6 @@ npx create-next-app
 
 para rodar o projeto
 npm run dev
+
+
+npm install -D tailwindcss
