@@ -1,15 +1,19 @@
-import { useContext, useState } from "react";
-import { PostContext } from "../contexts/PostContext";
+import { useState } from "react";
+import { usePosts } from "../contexts/PostContext";
+import { PostActionsTypes } from "../Reducers/PostReducer";
 
 export const Header = () => {
-  const postCtx = useContext(PostContext);
+  const postCtx = usePosts();
 
   const [tittleInput, setTitleInput] = useState("");
   const [bodyInput, setBodyInput] = useState("");
 
   const handleAddButton = () => {
     if (tittleInput && bodyInput) {
-      postCtx?.addPost(tittleInput, bodyInput);
+      postCtx?.dispatch({
+        type: PostActionsTypes.ADD_POST,
+        payload: { title: tittleInput, body: bodyInput },
+      });
       setTitleInput("");
       setBodyInput("");
     }
