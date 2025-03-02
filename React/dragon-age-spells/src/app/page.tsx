@@ -12,6 +12,7 @@ export default function Home() {
   //ver a interação das que tem pre requisito ficarem habilitadas quando o pre requisito for selecionado
   //botao de reset para refazer a build
   //fazer codigos de verificaçao para nao adicionar magia duplicada no servidor
+  //ajustar a escolha de cores para background e texto
   const themeCtx = useTheme();
 
   return (
