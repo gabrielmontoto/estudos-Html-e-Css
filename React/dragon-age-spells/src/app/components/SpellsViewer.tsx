@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import { Spells, SchoolType, SpellTest } from "../types/Spells"; // Importando os tipos
+import { useTheme } from "../contexts/ThemeContext";
 
 const SpellsViewer = () => {
+  const themeCtx = useTheme();
+
   const [spells, setSpells] = useState<Spells[]>([]); // Lista de magias
   const [selectedSpell, setSelectedSpell] = useState<Spells | null>(null); // Magia selecionada
   const [selectedSpells, setSelectedSpells] = useState<Spells[]>([]); // Magias escolhidas pelo personagem
@@ -65,7 +68,13 @@ const SpellsViewer = () => {
   };
 
   return (
-    <div className="p-4">
+    <div
+      className={`p-4 ${
+        themeCtx?.theme === "dark"
+          ? "bg-gray-900 text-white"
+          : "bg-slate-500 text-black"
+      }`}
+    >
       <h1 className="text-2xl font-bold mb-4">Magias</h1>
 
       {/* Mensagem de carregamento ou erro */}
@@ -79,15 +88,32 @@ const SpellsViewer = () => {
           placeholder="Buscar por nome..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border rounded p-2 w-1/4 bg-black text-white"
+          className={`border rounded p-2 w-1/4 ${
+            themeCtx?.theme === "dark"
+              ? "bg-gray-900 text-white"
+              : "bg-slate-500 text-black"
+          }`}
         />
 
         <select
           value={schoolFilter}
           onChange={(e) => setSchoolFilter(e.target.value as SchoolType)}
-          className="border rounded p-2  bg-black text-white"
+          className={`border rounded p-2 ${
+            themeCtx?.theme === "dark"
+              ? "bg-gray-900 text-white"
+              : "bg-slate-500 text-black"
+          }`}
         >
-          <option value="">Todas as Escolas</option>
+          <option
+            value=""
+            className={`${
+              themeCtx?.theme === "dark"
+                ? "bg-gray-900 text-white"
+                : "bg-slate-500 text-black"
+            }`}
+          >
+            Todas as Escolas
+          </option>
           {Object.values(SchoolType).map((school) => (
             <option key={school?.toString()} value={school?.toString()}>
               {school?.toString()}
@@ -100,20 +126,32 @@ const SpellsViewer = () => {
           placeholder="Mana Mínima"
           value={minMana}
           onChange={(e) => setMinMana(e.target.value)}
-          className="border rounded p-2 w-1/6  bg-black text-white"
+          className={`border rounded p-2 w-1/6 ${
+            themeCtx?.theme === "dark"
+              ? "bg-gray-900 text-white"
+              : "bg-slate-500 text-black"
+          }`}
         />
         <input
           type="number"
           placeholder="Mana Máxima"
           value={maxMana}
           onChange={(e) => setMaxMana(e.target.value)}
-          className="border rounded p-2 w-1/6  bg-black text-white"
+          className={`border rounded p-2 w-1/6 ${
+            themeCtx?.theme === "dark"
+              ? "bg-gray-900 text-white"
+              : "bg-slate-500 text-black"
+          }`}
         />
 
         <select
           value={testFilter}
           onChange={(e) => setTestFilter(e.target.value as SpellTest)}
-          className="border rounded p-2  bg-black text-white"
+          className={`border rounded p-2 ${
+            themeCtx?.theme === "dark"
+              ? "bg-gray-900 text-white"
+              : "bg-slate-500 text-black"
+          }`}
         >
           <option value="">Todos os Testes</option>
           {Object.values(SpellTest).map((test) => (
@@ -152,7 +190,13 @@ const SpellsViewer = () => {
           <div className="w-2/3 pl-4">
             <h2 className="text-xl font-semibold mb-2">Detalhes da Magia</h2>
             {selectedSpell ? (
-              <div className="p-4 border rounded bg-black text-white">
+              <div
+                className={`p-4 border rounded ${
+                  themeCtx?.theme === "dark"
+                    ? "bg-gray-900 text-white"
+                    : "bg-slate-500 text-black"
+                }`}
+              >
                 <h3 className="text-lg font-bold">{selectedSpell.name}</h3>
                 <p>
                   <strong>Escola:</strong> {selectedSpell.school}

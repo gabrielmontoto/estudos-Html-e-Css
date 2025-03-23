@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <ThemeProvider>
       <Container>
-        <Button label="Change colors" />
-        <div>
+        {/* <Button label="Change colors" /> */}
+        <div className="width-full h-full">
           <CreateSpell />
           <SpellsViewer />
         </div>

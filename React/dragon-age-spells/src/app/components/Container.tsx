@@ -10,10 +10,10 @@ export const Container = ({ children }: Props) => {
 
   return (
     <div
-      className={`w-full h-screen ${
+      className={`w-full h-full ${
         themeCtx?.theme === "dark"
-          ? "bg-gray-800 text-white"
-          : "bg-white text-black"
+          ? "bg-gray-900 text-white"
+          : "bg-slate-500 text-black"
       }`}
     >
       <div className="container mx-auto">{children}</div>
